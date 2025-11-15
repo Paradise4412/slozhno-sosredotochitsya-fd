@@ -153,10 +153,10 @@
   margin-block-start: 20px;
 }
 .text-heading {
-  margin-block-end: 10px; 
+  margin-block-end: 10px;
 }
 .content-paragraph:not(:last-child) {
-  margin-block-end: 20px; 
+  margin-block-end: 20px;
 }
 .section-content {
   background-color: var(--bg-text-color);
@@ -195,7 +195,7 @@
   font-weight: var(--font-weight-bold);
 }
 .concentrate_better-section .concentrate_better-section-heading_offset {
-  margin-block-start: 20px; 
+  margin-block-start: 20px;
 }
 .images-section {
   position: relative;

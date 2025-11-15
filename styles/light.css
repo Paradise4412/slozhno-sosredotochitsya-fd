@@ -35,6 +35,6 @@
     --decorated-zone-color: #353430;
   }
   :root.theme-light .rec {
-  display: none;
-}
+    display: none;
+  }
 }
