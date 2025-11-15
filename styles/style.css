@@ -230,7 +230,7 @@
   .header {
     padding: 0;
     min-inline-size: 768px;
-    max-block-size: 1024px;
+    block-size: 1024px;
   }
   .header-title {
     grid-row: 2;
@@ -390,6 +390,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding-inline-end: 20px;
   }
   .concentrate-section .concentrate-section__item {
     margin-block-start: 0;
@@ -406,6 +407,35 @@
   .concentrate-section .concentrate-section__item:nth-of-type(3) {
     grid-column: 3;
     grid-row: 1;
+  }
+  /* Дублирование стилей секции изображений для правильного расположения элементов*/
+  .images-section {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 16px;
+  }
+  .images-section .images-heading {
+    grid-column: 1 / -1;
+  }
+  .images-section__picture-sunset {
+    grid-column: 1 / 3;
+    grid-row: 2;
+  }
+  .images-section__picture-ice-cream {
+    grid-column: 3;
+    grid-row: 2 / 4;
+  }
+  .images-section__picture-tape {
+    grid-column: 1;
+    grid-row: 3 / 5;
+  }
+  .images-section__picture-books {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .images-section__picture-street {
+    grid-column: 2 / 4;
+    grid-row: 4;
   }
 }
 @media (prefers-color-scheme: dark) {
