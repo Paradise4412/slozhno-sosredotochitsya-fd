@@ -17,11 +17,13 @@
   --bg-text-color: #ff8dcb;
   --section-title-color: #353430;
   --text-color: #353430;
+  --hover-menu-color: #32312d66;
   --decorated-zone-color: #353430;
 }
 :root.theme-light .rec {
   display: none;
 }
+
 @media (prefers-color-scheme: light) {
   :root {
     --bg-image: url("../images/cover-image-light.png");
@@ -32,9 +34,10 @@
     --bg-text-color: #ff8dcb;
     --section-title-color: #353430;
     --text-color: #353430;
+    --hover-menu-color: #32312d66;
     --decorated-zone-color: #353430;
   }
-  :root.theme-light .rec {
+  :root .rec {
     display: none;
   }
 }

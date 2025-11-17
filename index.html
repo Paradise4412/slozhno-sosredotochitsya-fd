@@ -49,7 +49,8 @@
         </ul>
       </nav>
       <!-- Оформление шапки -->
-      <h1 class="heading header-title first-level-heading header_content">
+      <!-- ИЗМЕНЕНИЕ 1: Переименован first-level-heading на header__main-heading -->
+      <h1 class="heading header-title header__main-heading header_content">
         no focus
       </h1>
       <div class="header-text">
@@ -61,7 +62,8 @@
     </header>
     <main class="content content-section">
       <!-- Основные секции -->
-      <section class="focus-section article focus-section_first">
+      <!-- ИЗМЕНЕНИЕ 2: Переименован focus-section_first на focus-section_intro -->
+      <section class="focus-section article focus-section_intro">
         <!-- Секция Почему сосредоточиться так сложно -->
         <h2 class="heading section-title">Почему сосредоточиться так сложно</h2>
         <div class="content-text">
@@ -93,12 +95,14 @@
           </p>
         </div>
       </section>
-      <section class="concentrate-section concentrate-section_first article">
+      <!-- ИЗМЕНЕНИЕ 3: Переименован concentrate-section_first на concentrate-section_main -->
+      <section class="concentrate-section concentrate-section_main article">
         <!-- Секция Что снижает концентрацию -->
         <h2 class="heading section-title">
           Что снижает концентрацию внимания?
         </h2>
         <div class="content-text concentrate-section__content-text">
+          <!-- ИЗМЕНЕНИЕ 4: Класс concentrate-section__item сохраняет название, так как оно семантично -->
           <div class="concentrate-section__item">
             <h3
               class="text-heading section-content concentrate_section-heading"
@@ -147,8 +151,9 @@
           </div>
         </div>
       </section>
+      <!-- ИЗМЕНЕНИЕ 5: Переименован concentrate_better-section_first на concentrate_better-section_tips -->
       <section
-        class="concentrate_better-section concentrate_better-section_first article"
+        class="concentrate_better-section concentrate_better-section_tips article"
       >
         <!-- Секция Как концентрироваться лучше -->
         <h2 class="heading section-title">
@@ -156,16 +161,18 @@
           секунд)
         </h2>
         <div class="content-text">
+          <!-- ИЗМЕНЕНИЕ 6: Класс double_heading заменен на concentrate_better-section__intro-heading
+               так как он описывает "вводный" заголовок для секции советов -->
           <h3
-            class="text-heading section-content concentrate_better-section-heading double_heading"
+            class="text-heading section-content concentrate_better-section__intro-heading"
           >
             5 простых (на самом деле не очень) советов
           </h3>
-          <h3
+          <h4
             class="text-heading section-content concentrate_better-section-heading concentrate_better-section-heading_offset"
           >
             Представьте небо и облака
-          </h3>
+          </h4>
           <p class="content-paragraph paragraph_text">
             Или листья в ручье. Тут дело в лёгкой медитации, которая помогает
             успокоиться. Ведь часто именно тревожные мысли о сложных задачах как
@@ -176,22 +183,22 @@
             вернуться в настоящий момент, а не волноваться о потенциальных
             проблемах из будущего.
           </p>
-          <h3
+          <h4
             class="text-heading section-content concentrate_better-section-heading"
           >
             Включите музыку
-          </h3>
+          </h4>
           <p class="content-paragraph paragraph_text">
             Но не любую, и не любимую. Любимая может быть связана с сильными
             положительными эмоциями, которые тоже очень сильно отвлекают.
             Подойдёт тихая, спокойная, умеренно-ритмичная. Можно вообще
             попробовать включить плейлист с «белым шумом» или нейромузыкой.
           </p>
-          <h3
+          <h4
             class="text-heading section-content concentrate_better-section-heading"
           >
             Прогуляйтесь
-          </h3>
+          </h4>
           <p class="content-paragraph paragraph_text">
             Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
             <a href="#">показал</a>, что созерцание природы повышает
@@ -201,22 +208,22 @@
             он будет лучше работать. Но и простая двадцатиминутная прогулка —
             тоже отличный вариант.
           </p>
-          <h3
+          <h4
             class="text-heading section-content concentrate_better-section-heading"
           >
             Хорошо ешьте
-          </h3>
+          </h4>
           <p class="content-paragraph paragraph_text">
             Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
             которые препятствуют резким скачкам сахара в крови. Например, с
             высоким содержанием клетчатки: овощи, ягоды, бобовые (нут, чечевица,
             фасоль), коричневый рис, хлеб из цельнозерновой пшеницы.
           </p>
-          <h3
+          <h4
             class="text-heading section-content concentrate_better-section-heading"
           >
             Читайте
-          </h3>
+          </h4>
           <p class="content-paragraph paragraph_text">
             Настоящие бумажные книги. Это правда помогает с концентрацией: чтобы
             прочитать пост в соцсети, достаточно нескольких минут или даже
@@ -225,7 +232,8 @@
           </p>
         </div>
       </section>
-      <section class="images-section images-section_first article">
+      <!-- ИЗМЕНЕНИЕ 7: Переименован images-section_first на images-section_gallery -->
+      <section class="images-section images-section_gallery article">
         <!-- Секция с картинками -->
         <h3 class="heading section-content text-heading images-heading">
           А можно в картинках
@@ -264,7 +272,8 @@
     </main>
     <footer class="footer decorated-zone">
       <!-- Подвал -->
-      <h2 class="heading footer-title first-level-heading">focus</h2>
+      <!-- ИЗМЕНЕНИЕ 8: Переименован first-level-heading на footer__main-heading -->
+      <h2 class="heading footer-title footer__main-heading">focus</h2>
     </footer>
   </body>
 </html>
